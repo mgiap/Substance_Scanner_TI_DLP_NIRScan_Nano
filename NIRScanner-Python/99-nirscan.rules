@@ -1,0 +1,2 @@
+# Grant user access to the Nirscan Nano hidraw device
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="0451", ATTRS{idProduct}=="4200", MODE="0660", GROUP="plugdev"

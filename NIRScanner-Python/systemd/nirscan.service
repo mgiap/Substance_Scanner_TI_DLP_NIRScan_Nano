@@ -1,0 +1,16 @@
+[Unit]
+Description=NIRScan acquisition (uses existing venv)
+After=network.target
+
+[Service]
+User=pi
+Group=plugdev
+WorkingDirectory=/home/pi/NIRScanner-Python
+ExecStart=/home/pi/venvs/tflite-env/bin/python /home/pi/NIRScanner-Python/scan_substance.py --save-csv
+Restart=on-failure
+RestartSec=5
+Environment=PYTHONUNBUFFERED=1
+Environment=PYTHONPATH=/home/pi/NIRScanner-Python
+
+[Install]
+WantedBy=multi-user.target
