@@ -81,7 +81,7 @@ Hardware assembly instructions are intentionally kept minimal and are described 
 
 ## Using the Pre-Assembled Device (VGU)
 
-If you are using the **readily assembled device prepared by Dr. Võ Bích Hiền at Vietnamese–German University (VGU)**, the setup is intentionally simple.
+If you are using the **readily assembled device prepared by Dr. Vo Bich Hien at Vietnamese–German University (VGU)**, the setup is intentionally simple.
 
 ### Required Additional Components
 
@@ -145,11 +145,52 @@ Proper enclosure design is essential to:
 ## Intended Audience
 
 This repository is intended for:
-
 - Students and researchers working with NIR spectroscopy  
 - Engineers developing portable sensing systems  
 - Educators demonstrating applied spectroscopy and machine learning  
 - Developers focusing on **spectral data preprocessing and robustness**  
+
+---
+
+## How to Use
+
+### Initial Setup (Developer / Maintainer)
+
+Before using this repository, the Raspberry Pi must be configured for **remote access** (e.g., via SSH or another remote connection method). Since network environments and security policies vary, users are expected to configure remote connectivity independently using standard Raspberry Pi documentation and best practices.
+
+Once remote access is available:
+
+1. Power on the Raspberry Pi
+2. Clone this repository onto the device:
+   ```bash
+   git clone <repository-url>
+3. Navigate into the repository directory and follow any repository-specific instructions
+4. Ensure all hardware components are properly connected:
+- Raspberry Pi
+- Battery / power management circuit
+- DLP NIRScan Nano
+
+At this point, the system is ready to be used as intended.
+
+### User Operation (Deployed System)
+
+From an end-user perspective, normal operation does not require direct interaction with the Raspberry Pi software environment.
+- Connect the system to a power source
+- Wait for the system to fully boot
+
+Once booted, the system is operated using the 5-button input configuration near the display.
+**Button Functions:**
+With the device oriented so the display is upright:
+- Furthest button from the display: Starts the main program
+- Two vertically aligned buttons (relative to the display): Navigate between program options (up / down)
+- Nearest button to the display: Confirm / select the highlighted option
+- Remaining button: Go back to the previous menu or option
+
+The interface is designed to be simple and self-contained, allowing users to operate the system without a keyboard, mouse, or monitor once deployed.
+If the system does not respond as expected, ensure:
+- The device has completed booting
+- Power delivery is stable
+- All hardware connections are secure
 
 ---
 
