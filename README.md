@@ -158,3 +158,13 @@ This repository is intended for:
 I'd like to acknowledge Dr. Vo Bich Hien, Mr. Le Duy Nhat, as well as the DLP NIRScan Nano community on Github for providing us with assistance throughout this project.
 
 ---
+
+## Attribution
+
+Parts of the software structure and data handling approach in this repository are derived from:
+
+- **NIRScanner-Python**  
+  HighTemplar-wjiang, Joker2770, 2020  
+  https://github.com/HighTemplar-wjiang/NIRScanner-Python.git
+
+The code in this repository has been modified and extended to support improved preprocessing and portable deployment for our particular system.
